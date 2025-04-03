@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a href="#">Movie details</a></li>
+                    
+                    <li class="btn"><a href="/contacts.html">Contacts</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Trending Movies & TV Shows </h2>
+                <br>
+                <h1>Welcome to our movie website-
+                    your ultimate destination for movie and TV show lovers!</h1>
+                    <br>
+                 <h2>Stay up-to-date with the hottest trends in cinema and television! Explore our curated list of currently/always trending movies and TV shows, handpicked just for you!</h2>
+                 <br>
+                     <ul>
+                        <li>🎬 Discover top-rated films</li>
+                        <li>📺Find your next binge-worthy series</li>
+                        <li>⭐️Read honest reviews and ratings</li>
+                        <br>
+                        <h3>Don’t miss out! Click below to explore more</h3>
+                     </ul>
+                     <br>
+                <button class="btn">Get more details</button>
+            </div>
+            <img src="img/film.png" alt=" ">
+        </div>
+        <div class="container trending">
+            <a id ="#" class="see-all">SEE ALL</a>
+            <h3>Currently Trending Movies</h3>
+           
+
+            <div class="movies">
+                <div class="block">
+                    <a href="reviews.html?title=Deadpool">
+                        <img src="/img/dp.jpg" alt="dp" class="deadpool-img"/>
+                      </a>
+                </div>
+
+                <a href="reviews.html?title=Interstellar">
+                <div class="block">
+                    <img src="/img/int.jpg" alt="sg" class="squidgame-image">
+                    
+                </div>
+
+                <a href="reviews.html?title=The Greatest Showman">
+                <div class="block">
+                    <img src="/img/showman.jpg" alt="sm" class="showman-img">
+                    
+                </div>
+                <div class="block">
+                    
+                <a href="reviews.html?title=Wicked">
+                <img src="/img/poster1.jpg" alt="w" class="wicked-img"/>
+                </a>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class="container big-text">
+            <p>Stay ahead of the trends!Looking for the hottest movies and TV shows right now? We’ve got you covered! From action-packed blockbusters to must-watch series, these are the films and shows everyone is talking about.Whether you love thrillers, dramas, or musicals, there's something for everyone
+            </p>
+        </div>
+
+        <div class="container banner">
+            <h2>Explore more and find your next watch!</h2>
+            <ul>
+                <li>✨ New releases and upcoming hits</li>
+                <li>🔥 Fan-favorite movies & TV shows</li>
+                <li>🎥 Streaming now on popular platforms</li>
+                
+         
+             </ul>
+            <br>
+
+            
+            <img src="/img/3.png" alt="">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container project">
+           
+            <h1>Must-Watch TV Shows</h1>
+            <br>
+            <h2>🔥Check out our handpicked selection just for you. Start watching today🔥 </h2>
+            <br>
+            <div class="images">
+                <a href="reviews.html?title=House of the Dragon">
+                <img src="/img/houseof.jpg" alt="images">
+                 </a>
+                 <a href="reviews.html?title=Squid Game">
+                <img src="/img/squidgame.jpg" alt="">
+                 </a>
+                 <a href="reviews.html?title=The last airbender">
+                <img src="/img/avatar.jpg" alt="">
+                 </a>
+                 </div>
+                 <div class="images">
+                <a href="reviews.html?title=Modern family">
+                <img src="/img/modern.jpg" alt="">
+                </a>
+                <a href="reviews.html?title=The big bang theory">
+                <img src="/img/bigbangth.jpg" alt="">
+                </a>
+                <a href="reviews.html?title=peaky blinders">
+                <img src="/img/blindersjpg.jpg" alt="">
+                </a>
+                
+            </div>
+              <a href="#" class="see-all">SEE ALL</a>
+               <div class="container email">
+                <h3>Stay in the loop!</h3>
+                <p>Don’t miss out on the latest movie news, reviews, and exclusive updates. Subscribe now and be the first to know about trending films, must-watch TV shows, and special recommendations!.</p>
+                <div class="block">
+                    <div>
+                        <h4>Stay in the loop</h4>
+                        <p>Subscribe to receive the latest news and updates</p>
+                    </div>
+                     <div>
+                        <input type="email" id="emailField" placeholder="Enter email address">
+                        <button onclick="checkEmail()">Continue</button>
+                     </div>
+                </div>
+
+                
+               </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, repellat vel distinctio </p>
+
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Our blog</li>
+                    <li>Portfolio</li>
+                    <li>Contact us</li>
+                    <li>our social media</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <p>Lorem Ipsum is simply dummy text</p>
+                <p>+3530892367344</p>
+            </div>
+        </div>
+         <hr>
+         <p>Copyright 2021 lorem ALL rights Rcerved</p>
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert ('no @ symbol');
+            else if (!email.includes('.')) alert ('no . symbol');
+            else alert('everything works!');
+         }
+    </script>
+</body>
+
+</html>
